@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;700&family=Ms+Madi&display=swap');
+
+:root {
+    --font1:'Arima Madurai', cursive;
+    --font2: 'Ms Madi', cursive;
+
+    --color1: #FAE8E0;
+    --color2: #B6E2D3;
+    --color3: #D8A7B1;
+    --color4: #EF7C8E;
+    --color5: #167D7F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 26px;
+}
+
+nav {
+    background-color: #167D7F;
+    border-bottom: 1px solid var(--color1);
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul li {
+    display: inline;
+    padding: 14px;
+    font-size: 20px;
+}
+
+#banner {
+    background: var(--color1) url(../material/pexels-jill-wellington-3553703.jpg) center center no-repeat;
+    width: 100%;
+    height: 800px;
+}
+
+#banner h1,
+#banner p {
+    background-color: var(--color1);
+    position: relative;
+    top: 50%;
+    padding-left: 10px;
+    color: var(--color5);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#banner h1 {
+    font-size: 45px;
+}
+
+#banner p {
+    font-family: var(--font2);
+    font-size: 40px;
+    text-align: center;
+    color: var(--color4);
+}
+
+#company {
+    background-color: var(--color1);
+    color: var(--color5);
+    text-align: justify;
+    text-indent: 50px;
+    padding: 20px 20px;
+}
+
+#company h2,
+#products h2 {
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    width: 270px;
+    color: var(--color4);
+    border-top: 1px solid var(--color4);
+    border-bottom: 1px solid var(--color4);
+    text-indent: 0;
+    margin: auto;
+    padding: 0;
+}
+
+#company p {
+    padding: 10px;
+}
+
+#company span {
+    font-family: var(--font2);
+    font-size: 40px;
+    color: var(--color4);
+}
+
+#products {
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color5);
+    padding: 20px;
+    border-top: 1px solid var(--color1);
+}
+
+#products h2 {
+    color: var(--color5);
+    border-top: 2px solid var(--color5);
+    border-bottom: 2px solid var(--color5);
+}
+
+picture {
+    display: inline-block;
+    padding: 20px;
+}
+
+#products img {
+    border: 2px solid var(--color1);
+    border-radius: 30px;
+}
+
+#products figcaption {
+    color: var(--color5);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contact {
+    background-color: var(--color3);
+    border-top: 1px solid var(--color1);
+    padding: 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    width: 180px;
+    color: var(--color1);
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+    text-indent: 0;
+    margin: auto;
+    padding: 0;
+}
+
+form {
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+input,
+textarea {
+    display: block;
+    padding: 20px 100px 20px 15px;
+    border: none;
+    margin: 20px auto;
+    color: var(--color4);
+    background-color: var(--color1);
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 20px 50px;
+    color: var(--color1);
+    background-color: var(--color3);
+    border: 2px solid var(--color1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #167D7F;
+    border-top: 1px solid var(--color1);
+    color: var(--color1);
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/*media query for min 800px screen*/
+
+@media (min-width: 700px) {
+    #banner {
+        background-image: url(../material/pexels-jill-wellington-3553703big.jpg);
+        height: 900px;
+    }
+    nav {
+        font-size: 26px;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+#banner h1,
+#banner p {
+    width: 800px;
+    margin: auto;
+}
+
+}
+
+
